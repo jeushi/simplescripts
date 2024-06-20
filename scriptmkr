@@ -1,7 +1,6 @@
 #!/bin/bash
 
-read -p "What is the script name?" scriptName
-echo "Creating script $scriptName..."
+read -p "What is the script name? " scriptName
 touch $scriptName
 echo "#!/bin/bash" >> $scriptName
 chmod +x $scriptName
