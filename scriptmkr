@@ -1,0 +1,8 @@
+#!/bin/bash
+
+read -p "What is the script name?" scriptName
+echo "Creating script $scriptName..."
+touch $scriptName
+echo "#!/bin/bash" >> $scriptName
+chmod +x $scriptName
+echo "$scriptName has been created!"
