@@ -1,2 +1,2 @@
-# simplescripts
-Collection of my simple bash scripts.
+# Jeushi's Simple Scripts
+Collection of the bash scripts I make.
