@@ -1,3 +1,10 @@
+#!/usr/bin/env bash
+
+#
+#	Script to create files, write a portable shebang to them, and then run chmod +x on them to make them executable
+#	Usage: scriptmkr [FILE NAME]
+#
+
 touch $1
-echo "#!bin/bash"> $1
+echo "#!/usr/bin/env bash"> $1
 chmod +x $1

@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+
+#
+# 	Makes adding new RSS Feeds to Newsboat slightly less work
+# 	Usage: arss [RSS URL]
+#
+
+if [ -z "$1" ]
+then
+	echo "Error! You need to pass an argument Usage: arss [RSS URL]"
+fi
+
+echo $1 >> ~/.newsboat/urls
