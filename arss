@@ -8,6 +8,7 @@
 if [ -z "$1" ]
 then
 	echo "Error! You need to pass an argument Usage: arss [RSS URL]"
+	exit
 fi
 
 echo $1 >> ~/.newsboat/urls

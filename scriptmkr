@@ -5,6 +5,12 @@
 #	Usage: scriptmkr [FILE NAME]
 #
 
+if [ -z "$1"]
+then
+	echo "Error! No filename provided. Usage: scriptmkr [FILENAME]"
+	exit
+
+fi
 touch $1
 echo "#!/usr/bin/env bash"> $1
 chmod +x $1

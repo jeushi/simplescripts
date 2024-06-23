@@ -1,0 +1,21 @@
+#!/usr/bin/env bash
+
+#
+#	Random Renamer. Randomize all filenames inside a specified directory.
+# 	Usage: rr [PATH]
+# 	This is an edited script from either stackoverflow or quora.
+
+if [ -z "$1" ]
+then
+	echo "Error! You need to provide a path. Usage: rr [PATH]"
+	exit
+fi
+for file in $1/*.*
+do
+	fn=$(basename -- "$file")
+	suffix="${file##*.}"
+	fn="${fn%.*}"
+	nn="$(cat /dev/urandom | tr -cd 'a-z0-9' | fold -w 10 | head -n 1)"
+	mv $file "$1/$nn.$suffix"
+done
+
