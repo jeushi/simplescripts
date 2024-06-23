@@ -5,7 +5,7 @@
 #	Usage: scriptmkr [FILE NAME]
 #
 
-if [ -z "$1"]
+if [ -z "$1" ]
 then
 	echo "Error! No filename provided. Usage: scriptmkr [FILENAME]"
 	exit
